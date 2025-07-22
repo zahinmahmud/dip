@@ -1,0 +1,50 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <h1 id="text">welcome</h1>
+    <button id="btn" onClick="btnClick()">Mytext</button>
+    
+    
+   
+    <script>
+    let myText=document.getElementById("text");
+    myText.innerText="Welcome to javascript";
+   
+    Object.assign(myText.style,{
+      color:"red",
+      fontWeight:"bold",
+      backgroundColor:"blue",
+      fontSize:"30px",
+      padding:"10px",
+      borderRadius:"8px",
+      
+    })
+    myText.addEventListener("mouseover",function(){
+      myText.backgroundColor="green";
+    });
+    myText.addEventListener("mouseout",function(){
+      myText.backgroundColor="blue";
+    });
+    
+    function btnClick(){
+      let btn = document.getElementById("btn");
+      btn.innerText="I love you";
+      btn.style.color="blue";
+      btn.style.fontWeight="bold";
+      btn.style.backgrondColor="green";
+      Object.assign(btn.style,{
+        color:"blue",
+        fontWeight:"bold",
+        backgroundColor:"red",
+        fontSize:"30px",
+        padding:"10px",
+        borderRadius:"8px",
+      })
+    }
+    
+  
+    </script>
+  </body>
+</html>
